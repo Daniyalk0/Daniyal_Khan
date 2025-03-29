@@ -37,15 +37,15 @@ export default function Index() {
     open: {
       width: dimensions.width,
       height: dimensions.height,
-      top: "-5px",
-      right: "-5px",
+      top: "-16px",
+      right: "-40px",
       transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] },
     },
     closed: {
       width: "100px",
       height: "40px",
-      // top: "16px",
-      // right: '',
+      top: "0px",
+      right: '0px',
       transition: {
         duration: 0.75,
         delay: 0.35,
