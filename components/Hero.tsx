@@ -148,7 +148,7 @@ const Hero = () => {
 
           <div className="overflow-hidden w-full flex items-center justify-center mt-[3rem] md:mt-12">
             <motion.a
-              href="#about"
+              href="#projects"
               initial={{ scale: 0, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{
