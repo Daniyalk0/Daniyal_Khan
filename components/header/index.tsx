@@ -20,7 +20,7 @@ export default function Index() {
   useEffect(() => {
     const updateSize = () => {
       if (window.innerWidth < 640) {
-        setDimensions({ width: "64vw", height: "70vh" }); // Mobile screens
+        setDimensions({ width: "70vw", height: "70vh" }); // Mobile screens
       } else if (window.innerWidth < 1024) {
         setDimensions({ width: "60vw", height: "80vh" }); // Tablet screens
       } else {
@@ -44,8 +44,8 @@ export default function Index() {
     closed: {
       width: "100px",
       height: "40px",
-      top: "0px",
-      right: '0px',
+      // top: "0px",
+      // right: '0px',
       transition: {
         duration: 0.75,
         delay: 0.35,
