@@ -33,25 +33,6 @@ export default function Index() {
     return () => window.removeEventListener("resize", updateSize);
   }, []);
 
-  // useLayoutEffect(() => {
-  //   const updateSize = () => {
-  //     if (window.innerWidth < 640) {
-  //       setDimensions({ width: "60vw", height: "70vh" });
-  //       // setRightValue("5px"); // Mobile
-  //     } else if (window.innerWidth < 1024) {
-  //       setDimensions({ width: "60vw", height: "80vh" });
-  //       // setRightValue("10px"); // Tablet
-  //     } else {
-  //       setDimensions({ width: "40vw", height: "90vh" });
-  //       // setRightValue("20px"); // Desktop
-  //     }
-  //   };
-
-  //   updateSize();
-  //   window.addEventListener("resize", updateSize);
-  //   return () => window.removeEventListener("resize", updateSize);
-  // }, []);
-
   const menu = {
     open: {
       width: dimensions.width,
@@ -74,28 +55,6 @@ export default function Index() {
     },
   };
 
-  const { scrollYProgress } = useScroll();
-
-  // set true for the initial state so that nav bar is visible in the hero section
-  const [visible, setVisible] = useState(true);
-
-  useMotionValueEvent(scrollYProgress, "change", (current) => {
-    // Check if current is not undefined and is a number
-    if (typeof current === "number") {
-      let direction = current! - scrollYProgress.getPrevious()!;
-
-      if (scrollYProgress.get() < 0.05) {
-        // also set true for the initial state
-        setVisible(true);
-      } else {
-        if (direction < 0) {
-          setVisible(true);
-        } else {
-          setVisible(false);
-        }
-      }
-    }
-  });
   const navbarRef = useRef(null);
 
   // Function to close the navbar when clicking outside
@@ -132,19 +91,6 @@ export default function Index() {
           delay: 2.2,
         }}
       >
-        {/* <motion.h2
-        className="font-blade tracking-widest lowercase lg:text-[3rem] text-4xl "
-        style={{
-          background:
-            "linear-gradient(90deg, rgba(0,49,168,1) 47%, rgba(86,183,255,1) 86%)",
-          WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
-        }}
-      >
-        DK
-      </motion.h2> */}
-        {/* </div> */}
-
         <motion.div
           ref={navbarRef}
           className={`w-[40vw]  h-[70vh]  absolute overflow-hidden `}
