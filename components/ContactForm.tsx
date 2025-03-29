@@ -28,26 +28,26 @@ const ContactForm = () => {
 
   const onSubmit = async (data: FormData) => {
     try {
-      // await emailjs.send(
-      //   process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-      //   process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-      //   {
-      //     name: data.name,
-      //     email: data.email,
-      //     message: data.message,
-      //   },
-      //   process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
-      // );
-      // await emailjs.send(
-      //   process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-      //   process.env.NEXT_PUBLIC_EMAILJS_CONFIRMATION_TEMPLATE_ID!, // New template for confirmation
-      //   {
-      //     name: data.name,
-      //     email: data.email, // This ensures the email is sent to the sender
-      //     message: data.message,
-      //   },
-      //   process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
-      // );
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        {
+          name: data.name,
+          email: data.email,
+          message: data.message,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_CONFIRMATION_TEMPLATE_ID!, // New template for confirmation
+        {
+          name: data.name,
+          email: data.email, // This ensures the email is sent to the sender
+          message: data.message,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
       toast.success("Message sent Successfully!");
       console.log("Both emails sent successfully!");
       reset(); // Reset form after submission
