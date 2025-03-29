@@ -56,8 +56,8 @@ export default function Index() {
     open: {
       width: dimensions.width,
       height: dimensions.height,
-      top: "6px",
-      right: "8px",
+      top: "-5px",
+      right: "-5px",
       transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] },
     },
     closed: {
