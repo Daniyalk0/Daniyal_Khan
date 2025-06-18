@@ -93,13 +93,13 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      name: "YC Directory- ",
-      title: "StartUp Creater App",
-      des: "Built a Next.js 15 platform for entrepreneurs to submit startups, join pitch competitions, browse ideas, and gain exposure.",
-      img: "/ycD-modified.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/sanity.png"],
-      link: "https://yc-directory-app-smoky.vercel.app/",
-      linkname:"/yc_directory_app",
+      name: "Daniyal khan- ",
+      title: "Personal Portfolio",
+      des: "Built with Next.js for handling the user interface, Framer motion for beautiful animations, and styled with TailwindCSS, this portfolio demonstrates the developer's skills in a unique manner that creates a lasting impact.",
+      img: "/sirtt-modified.png",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/framer-motion.svg"],
+      link: "http://daniyal-khan.vercel.app/",
+      linkname:"/daniyal-khan",
       imgClass:""
     },
     {
