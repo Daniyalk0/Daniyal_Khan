@@ -16,8 +16,7 @@ export const navItems = [
     { name: "Redux", src: "/redux.png" },
     { name: "Github", src: "/githubb.png" },
     { name: "Git", src: "/git.png" },
-    { name: "Sanity", src: "/sanity.png" },
-    { name: "Appwrite", src: "/appwrite.png" },
+    { name: "Firebase", src: "/firebase.png" },
   ];
   
   
@@ -33,16 +32,6 @@ export const navItems = [
       img: "",
       spareImg: "/techstackimg.jpg",
     },
-    // {
-    //   id: 2,
-    //   title: "I'm very flexible with time zone communications",
-    //   description: "",
-    //   className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    //   imgClassName: "",
-    //   titleClassName: "justify-start",
-    //   img: "",
-    //   spareImg: "",
-    // },
     {
       id: 3,
       title: "I prioritize collaboration, fostering open communication ",
