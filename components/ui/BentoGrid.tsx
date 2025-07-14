@@ -63,20 +63,7 @@ export const BentoGridItem = ({
   spareImg?: string;
   spareImgClass?: string;
 }) => {
-  const techStack = [
-    "ReactJS",
-    "NextJS",
-    "Typescript",
-    "Javascript",
-    "Html",
-    "CSS",
-    "TailwindCSS",
-    "Git",
-    "Github",
-    "Sanity.io",
-    "Appwrite",
-    "OAuth",
-  ];
+
 
   const [copied, setCopied] = useState(false);
 

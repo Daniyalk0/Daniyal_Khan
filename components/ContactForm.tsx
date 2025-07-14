@@ -5,7 +5,6 @@ import { formSchema } from "@/lib/validation"; // Import the schema
 import { z } from "zod";
 import emailjs from "@emailjs/browser";
 import { PiShareNetworkDuotone } from "react-icons/pi";
-import { GlowingEffect } from "./ui/glowing-effect";
 import Input from "./Input";
 import { useEffect, useRef } from "react";
 import { Button } from "./ui/Moving-border";
@@ -92,8 +91,7 @@ const ContactForm = () => {
             <PiShareNetworkDuotone />
           </div>
           <p
-            className="tracking-widest text-[0.7rem] xl:text-sm hidden md:block py-1"
-            style={{ wordSpacing: "0.2rem" }}
+            className="font-sans text-[0.7rem] xl:text-sm hidden md:block py-1"
           >
             Feel free to connect for collaborations or to discuss exciting
             projects!

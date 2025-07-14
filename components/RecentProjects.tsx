@@ -99,7 +99,7 @@ const RecentProjects = () => {
               </div>
 
               <p
-                className="tracking-widest font-light text-sm line-clamp-2 font-blade-singer-cond leading-normal md:leading-6"
+                className="text-sm line-clamp-2  leading-normal md:leading-6"
                 style={{
                   color: "#BEC1DD",
                   margin: "1vh 0",

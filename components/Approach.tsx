@@ -186,7 +186,7 @@ const Card = ({
         <p
           className="text-sm opacity-0 group-hover/canvas-card:opacity-100
          relative z-10 mt-4 group-hover/canvas-card:text-white text-center
-         group-hover/canvas-card:-translate-y-2 transition duration-200 font-blade-singer-cond tracking-wide md:tracking-wider"
+         group-hover/canvas-card:-translate-y-2 transition duration-200 "
           style={{ color: "#E4ECFF" }}
         >
           {des}

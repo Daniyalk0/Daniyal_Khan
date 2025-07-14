@@ -29,18 +29,17 @@ const Footer = () => {
       <h1 className="heading font-blade-singer-cond flex items-center justify-center flex-wrap tracking-wider relative my-12 md:my-14 !text-3xl md:!text-5xl">
         Get in{" "}
         <span className="relative inline-block overflow-hidden py-2 px-2 md:px-4 mx-2">
- 
-        <motion.span
-  style={{
-    background:
-      "linear-gradient(90deg, rgba(0,146,255,1) 11%, rgba(0,18,62,1) 65%)",
-  }}
-  className="absolute left-0 rounded-xl top-0 h-full w-full z-0"
-  initial={{ width: 0 }}
-  whileInView={{ width: "100%" }}
-  viewport={{ once: true, amount: 0.5 }} // Ensures it triggers only once
-  transition={{ duration: 1, ease: "easeInOut", delay: 0.1 }}
-/>
+          <motion.span
+            style={{
+              background:
+                "linear-gradient(90deg, rgba(0,146,255,1) 11%, rgba(0,18,62,1) 65%)",
+            }}
+            className="absolute left-0 rounded-xl top-0 h-full w-full z-0"
+            initial={{ width: 0 }}
+            whileInView={{ width: "100%" }}
+            viewport={{ once: true, amount: 0.5 }} // Ensures it triggers only once
+            transition={{ duration: 1, ease: "easeInOut", delay: 0.1 }}
+          />
 
           {/* Text Above the Background */}
           <span className="relative z-10 text-white">touch</span>
@@ -50,16 +49,15 @@ const Footer = () => {
       <ContactForm />
 
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center relative w-full">
-      <p className="md:text-sm text-[0.8rem] mb-2 md:mb-0 md:font-normal font-blade-singer-cond tracking-widest">
-  Copyright <span className="font-sans">&copy;</span> 2025 Daniyal Khan
-</p>
-
+        <p className="md:text-sm text-[0.8rem] mb-2 md:mb-0 md:font-normal ">
+          Copyright <span className="font-sans">&copy;</span> 2025 Daniyal Khan
+        </p>
 
         <div className="flex items-center md:gap-3 gap-4">
           {socialMedia.map((info) => (
             <a
-            href={info.href}
-            target="_blank"
+              href={info.href}
+              target="_blank"
               key={info.id}
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
             >

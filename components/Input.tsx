@@ -40,21 +40,17 @@ const Input: React.FC<InputProps> = ({
         <textarea
           {...register(value)}
           placeholder={place}
-          className="w-full bg-transparent outline-none font-blade-singer-cond tracking-widest text-sm relative z-10 resize-none  h-40 md:h-48 lg:h-36"
+          className="w-full bg-transparent outline-none text-sm relative z-10 resize-none  h-40 md:h-48 lg:h-36"
         />
       ) : (
         <input
           type={type} // Dynamically set input type
           {...register(value)}
           placeholder={place}
-          className="w-full bg-transparent outline-none font-blade-singer-cond tracking-widest text-sm relative z-50"
+          className="w-full bg-transparent outline-none  text-sm relative z-50"
         />
       )}
 
-      {/* Display error message dynamically */}
-      {/* {errors?.[value] && (
-        <p className="text-red-500">{errors[value]?.message as string}</p>
-      )} */}
     </div>
   );
 };
