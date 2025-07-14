@@ -84,7 +84,7 @@ export const navItems = [
       id: 1,
       name: "Daniyal khan- ",
       title: "Personal Portfolio",
-      des: "A unique portfolio that highlights the developer's creativity and skill through smooth animations and impactful design, leaving a lasting impression.",
+      des: "Empowered by Aceternity UI, this portfolio blends elegant design with an interactive and responsive user experience. ",
       img: "/sirtt-modified.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/framer-motion.svg"],
       link: "http://daniyal-khan.vercel.app/",
